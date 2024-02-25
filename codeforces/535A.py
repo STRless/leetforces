@@ -9,7 +9,7 @@ def main():
     if s in m:
         sys.stdout.write(f"{m[s]}")
     else:
-        double = {2: "twenty", 3: "thiry", 4: "fourty", 5: "fifty", 6: "sixty", 7: "seventy", 8: "eighty", 9: "ninety"}
+        double = {2: "twenty", 3: "thirty", 4: "forty", 5: "fifty", 6: "sixty", 7: "seventy", 8: "eighty", 9: "ninety"}
         if s % 10 == 0:
             sys.stdout.write(f"{double[s//10]}")
         else:
