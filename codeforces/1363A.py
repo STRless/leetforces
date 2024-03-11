@@ -7,24 +7,15 @@ def main():
         n, x = map(int, sys.stdin.readline().split())
         arr = list(map(int, sys.stdin.readline().split()))
 
-        odds = evens = 0
+        odds = 0
         for a in arr:
             if a % 2:
                 odds += 1
-            else:
-                evens += 1
         
-        m = min(evens, x-1)
-        d = x - m
-
-        if d % 2 == 0:
-            d += 1
-
-
-        if odds >= d and d <= x:
-            sys.stdout.write("Yes\n")
-        else:
+        if (odds == 0) or (odds == n and x % 2 == 0) or (x == n and odds % 2 == 0):
             sys.stdout.write("No\n")
+        else:
+            sys.stdout.write("Yes\n")
 
 
 if __name__ == "__main__":
