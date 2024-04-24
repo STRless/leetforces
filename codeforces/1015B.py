@@ -5,6 +5,7 @@ def main():
     n = int(sys.stdin.readline())
     s = list(sys.stdin.readline().strip())
     t = list(sys.stdin.readline().strip())
+
     ans = []
     for i in range(n):
         if s[i] != t[i]:
